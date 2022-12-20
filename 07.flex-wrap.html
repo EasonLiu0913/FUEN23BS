@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>align items</title>
+    <style>
+        .wrap {
+            width: 500px;
+            height: 500px;
+            background-color: #ccc;
+            display: flex;
+            flex-direction: row;
+
+            flex-wrap: wrap;
+
+
+            /* 單行的排列 */
+            align-items: flex-start;
+
+
+            /* 多行的排列 */
+            align-content: stretch;
+
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+        }
+
+        .box1 {
+            background-color: #faf;
+        }
+
+        .box2 {
+            background-color: #ffa;
+        }
+
+        .box3 {
+            background-color: #aaf;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .col {
+            /* BOX-MODEL */
+            box-sizing: border-box;
+            width: 100%;
+            padding: 0 5px;
+            margin-bottom: 10px;
+
+            /* background-color: #ccc; */
+            border: 1px solid blue;
+        }
+
+        .myCard {
+            border: 1px solid red;
+        }
+
+        .myCard img {
+            width: 100%;
+        }
+
+        @media screen and (min-width:576px) {
+            .col {
+                width: 50%;
+            }
+        }
+
+        @media screen and (min-width:768px) {
+            .col {
+                width: 33.333333%;
+            }
+        }
+
+        @media screen and (min-width:992px) {
+            .col {
+                width: 25%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="row">
+        <div class="col">
+            <div class="myCard">
+                <img src="https://fakeimg.pl/300x200/" alt="">
+                <h3>item1</h3>
+                <p>price:$3000</p>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="myCard">
+                <img src="https://fakeimg.pl/300x200/" alt="">
+                <h3>item1</h3>
+                <p>price:$3000</p>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="myCard">
+                <img src="https://fakeimg.pl/300x200/" alt="">
+                <h3>item1</h3>
+                <p>price:$3000</p>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="myCard">
+                <img src="https://fakeimg.pl/300x200/" alt="">
+                <h3>item1</h3>
+                <p>price:$3000</p>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="myCard">
+                <img src="https://fakeimg.pl/300x200/" alt="">
+                <h3>item1</h3>
+                <p>price:$3000</p>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="myCard">
+                <img src="https://fakeimg.pl/300x200/" alt="">
+                <h3>item1</h3>
+                <p>price:$3000</p>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="myCard">
+                <img src="https://fakeimg.pl/300x200/" alt="">
+                <h3>item1</h3>
+                <p>price:$3000</p>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="myCard">
+                <img src="https://fakeimg.pl/300x200/" alt="">
+                <h3>item1</h3>
+                <p>price:$3000</p>
+            </div>
+        </div>
+        <div class="col">
+            <div class="myCard">
+                <img src="https://fakeimg.pl/300x200/" alt="">
+                <h3>item1</h3>
+                <p>price:$3000</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <div class="wrap">
+        <div class="box box1">box1</div>
+        <div class="box box2">box2</div>
+        <div class="box box3">box3</div>
+        <div class="box box3">box4</div>
+        <div class="box box3">box5</div>
+        <div class="box box3">box6</div>
+        <div class="box box3">box7</div>
+        <div class="box box3">box7</div>
+        <div class="box box3">box7</div>
+        <div class="box box3">box7</div>
+        <div class="box box3">box7</div>
+
+    </div> -->
+
+
+</body>
+
+</html>
