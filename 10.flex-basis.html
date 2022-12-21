@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .wrap {
+            display: flex;
+            /* flex-direction: column; */
+        }
+
+        .w-100 {
+            background-color: #faf;
+            /* width: 100%; */
+
+            /* flex: 1 0 0; */
+            max-width: 300px;
+            width: 80%;
+            flex-basis: 500px;
+            min-width: 200px;
+        }
+
+        .w-auto {
+            /* display: block; */
+            background-color: #afa;
+            width: 100px;
+            /* flex-basis: 200px; */
+            /* flex: 1 0 0; */
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="w-100">w-100</div>
+        <div class="w-auto">w-auto</div>
+    </div>
+</body>
+
+</html>

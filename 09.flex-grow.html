@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex grow</title>
+    <style>
+        .d-flex {
+            width: 800px;
+            display: flex;
+            background-color: #ccc;
+        }
+
+        .col {
+            box-sizing: border-box;
+            width: 200px;
+            height: 200px;
+            border: 1px solid #000;
+        }
+
+        .box1 {
+            flex-shrink: 1;
+        }
+
+        .box2 {
+            flex-grow: 1;
+            flex-shrink: 0;
+            background-color: aqua;
+        }
+
+        .box3 {
+            flex-grow: 0;
+            flex-shrink: 0;
+            background-color: lightsalmon;
+        }
+
+        .w300 {
+            width: 800px;
+            height: 50px;
+            background-color: #000;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="d-flex">
+        <div class="col box1">box1</div>
+        <div class="col box2">box2</div>
+        <div class="col box3">box3</div>
+    </div>
+
+    <div class="w300"></div>
+</body>
+
+</html>
