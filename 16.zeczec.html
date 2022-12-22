@@ -18,6 +18,35 @@
                 border-top: none !important;
             }
         }
+
+        .logo {
+            animation: logo-animation 1s linear infinite;
+        }
+
+        @keyframes logo-animation {
+
+            0% {
+                transform: rotate(0);
+                fill: #aaf;
+            }
+
+            25% {
+                fill: #ffa;
+            }
+
+            50% {
+                fill: #faf;
+            }
+
+            75% {
+                fill: #afa;
+            }
+
+            100% {
+                transform: rotate(360deg);
+                fill: #aff;
+            }
+        }
     </style>
 </head>
 
